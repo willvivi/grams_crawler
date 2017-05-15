@@ -33,7 +33,7 @@ def get_content(url, data):
     return urllib2.urlopen(request).read()
 
 def renew_connection():
-    conn = TorCtl.connect(controlAddr="127.0.0.1", controlPort=9051, passphrase="ukc2018Dn€t")
+    conn = TorCtl.connect(controlAddr="127.0.0.1", controlPort=9051, passphrase="")
     conn.send_signal("NEWNYM")
     conn.close()
 
